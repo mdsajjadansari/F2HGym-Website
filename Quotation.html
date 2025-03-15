@@ -81,11 +81,28 @@
     .cta a:hover {
       background-color: #4cae4c;
     }
+     /* Your CSS here */
+        .logo-container {
+            text-align: center; /* Align logo to center */
+            margin-top: 20px;
+        }
+
+        .logo-container img {
+            max-width: 100%; /* Make the image resize according to screen size */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Optional: add media queries for further control on mobile devices */
+        @media screen and (max-width: 600px) {
+            .logo-container img {
+                max-width: 80%; /* Make the logo a little smaller on mobile screens */
+            }
+        }
   </style>
 </head>
 <body>
 
-<header>
+<header class="logo-container">
   <h1><img src="DesignWebmasterLOGo.jpg" alt="DesignWeb Masters Logo"></h1>
   <p>Kolkata | +91 7278879861 | speaktosajjad@gmail.com</p>
 </header>
